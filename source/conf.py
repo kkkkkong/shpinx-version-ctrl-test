@@ -5,6 +5,7 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import sphinx_rtd_theme
 
 project = 'shpinx-test-version-ctrl'
 copyright = '2024, kong'
@@ -20,13 +21,15 @@ extensions = [ 'sphinx_multiversion']
 templates_path = ['_templates']
 exclude_patterns = []
 
-language = 'zh-CN'
+language = 'zh_CN'
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+# html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'
 
-html_theme = 'alabaster'
-html_static_path = ['_static']
+# html_static_path = ['_static']
+html_static_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 
 # version
@@ -38,4 +41,4 @@ html_sidebars = {
 }
 
 # 指定哪个分支为 lastest 版本
-smv_latest_version = 'v2'
+smv_latest_version = 'main'
