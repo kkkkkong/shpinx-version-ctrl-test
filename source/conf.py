@@ -14,7 +14,8 @@ release = 'v0.1'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['chinese_search','sphinx.ext.mathjax','sphinx_sitemap', 'sphinx_multiversion']
+# extensions = ['chinese_search','sphinx.ext.mathjax','sphinx_sitemap', 'sphinx_multiversion']
+extensions = [ 'sphinx_multiversion']
 
 templates_path = ['_templates']
 exclude_patterns = []
@@ -32,9 +33,9 @@ html_static_path = ['_static']
 templates_path = ['_templates']
 html_sidebars = {
     '**': [
-        'versioning.html',
+        'versions.html',
     ],
 }
 
 # 指定哪个分支为 lastest 版本
-smv_latest_version = 'master'
+smv_latest_version = 'v2'

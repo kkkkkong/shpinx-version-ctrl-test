@@ -9,6 +9,9 @@ Welcome to shpinx-test-version-ctrl's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   2020/index
+   about
 
 
 
